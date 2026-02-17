@@ -4,6 +4,10 @@ public static class VerifyMockly
 {
     public static bool Initialized { get; private set; }
 
+    static HttpMockConverter httpMockConverter = new();
+    static CapturedRequestConverter capturedRequestConverter = new();
+    static RequestCollectionConverter collectionConverter = new();
+
     public static void Initialize()
     {
         if (Initialized)
@@ -18,9 +22,9 @@ public static class VerifyMockly
             .AddExtraSettings(settings =>
             {
                 var converters = settings.Converters;
-                converters.Add(new HttpMockConverter());
-                converters.Add(new CapturedRequestConverter());
-                converters.Add(new RequestCollectionConverter());
+                converters.Add(httpMockConverter);
+                converters.Add(capturedRequestConverter);
+                converters.Add(collectionConverter);
             });
     }
 }

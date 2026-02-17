@@ -109,6 +109,26 @@ public async Task VerifyPostRequest()
 <sup><a href='/src/Tests/Tests.cs#L24-L47' title='Snippet source file'>snippet source</a> | <a href='#snippet-VerifyPostRequest' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
+Results in:
+
+<!-- snippet: Tests.VerifyPostRequest.verified.txt -->
+<a id='snippet-Tests.VerifyPostRequest.verified.txt'></a>
+```txt
+[
+  {
+    Method: POST,
+    Scheme: https,
+    Host: api.example.com,
+    Path: /api/users,
+    Body: {"name":"Jane"},
+    WasExpected: true,
+    StatusCode: Created
+  }
+]
+```
+<sup><a href='/src/Tests/Tests.VerifyPostRequest.verified.txt#L1-L11' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.VerifyPostRequest.verified.txt' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
 
 ## Verifying a RequestCollection
 
@@ -135,6 +155,33 @@ public async Task VerifyRequestCollection()
 }
 ```
 <sup><a href='/src/Tests/Tests.cs#L49-L70' title='Snippet source file'>snippet source</a> | <a href='#snippet-VerifyRequestCollection' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+Results in:
+
+<!-- snippet: Tests.VerifyRequestCollection.verified.txt -->
+<a id='snippet-Tests.VerifyRequestCollection.verified.txt'></a>
+```txt
+[
+  {
+    Method: GET,
+    Scheme: https,
+    Host: api.example.com,
+    Path: /api/users/1,
+    WasExpected: true,
+    StatusCode: OK
+  },
+  {
+    Method: GET,
+    Scheme: https,
+    Host: api.example.com,
+    Path: /api/users/2,
+    WasExpected: true,
+    StatusCode: OK
+  }
+]
+```
+<sup><a href='/src/Tests/Tests.VerifyRequestCollection.verified.txt#L1-L18' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.VerifyRequestCollection.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -168,4 +215,24 @@ public async Task ScrubBody()
 }
 ```
 <sup><a href='/src/Tests/Tests.cs#L72-L96' title='Snippet source file'>snippet source</a> | <a href='#snippet-ScrubBody' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+Results in:
+
+<!-- snippet: Tests.ScrubBody.verified.txt -->
+<a id='snippet-Tests.ScrubBody.verified.txt'></a>
+```txt
+[
+  {
+    Method: POST,
+    Scheme: https,
+    Host: api.example.com,
+    Path: /api/users,
+    Body: Scrubbed,
+    WasExpected: true,
+    StatusCode: Created
+  }
+]
+```
+<sup><a href='/src/Tests/Tests.ScrubBody.verified.txt#L1-L11' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.ScrubBody.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->

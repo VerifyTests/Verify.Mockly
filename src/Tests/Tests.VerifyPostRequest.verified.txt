@@ -1,0 +1,11 @@
+[
+  {
+    Method: POST,
+    Scheme: https,
+    Host: api.example.com,
+    Path: /api/users,
+    Body: {"name":"Jane"},
+    WasExpected: true,
+    StatusCode: Created
+  }
+]

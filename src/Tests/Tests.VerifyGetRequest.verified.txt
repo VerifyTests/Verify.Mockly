@@ -1,0 +1,10 @@
+[
+  {
+    Method: GET,
+    Scheme: https,
+    Host: api.example.com,
+    Path: /api/users/123,
+    WasExpected: true,
+    StatusCode: OK
+  }
+]

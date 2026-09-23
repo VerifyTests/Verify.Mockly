@@ -1,7 +1,7 @@
 # <img src="/src/icon.png" height="30px"> Verify.Mockly
 
 [![Discussions](https://img.shields.io/badge/Verify-Discussions-yellow?svg=true&label=)](https://github.com/orgs/VerifyTests/discussions)
-[![Build status](https://img.shields.io/appveyor/build/SimonCropp/Verify-Mockly)](https://ci.appveyor.com/project/SimonCropp/Verify-Mockly)
+[![Build status](https://github.com/VerifyTests/Verify.Mockly/actions/workflows/build.yml/badge.svg)](https://github.com/VerifyTests/Verify.Mockly/actions/workflows/build.yml)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.Mockly.svg)](https://www.nuget.org/packages/Verify.Mockly/)
 
 Adds [Verify](https://github.com/VerifyTests/Verify) support for verifying [Mockly](https://mockly.org/) types.<!-- singleLineInclude: intro. path: /docs/intro.include.md -->

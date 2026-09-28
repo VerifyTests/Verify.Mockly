@@ -53,7 +53,7 @@ jobs:
         run: dotnet build src --configuration Release ${{ env.VERSION_ARGUMENT }}
 
       - name: Test
-        run: dotnet test src --configuration Release --no-build --no-restore --filter Category!=Integration
+        run: dotnet test --solution src/Verify.Mockly.slnx --configuration Release --no-build --no-restore --treenode-filter "/*/*/*/*[Category!=Integration]"
 
       - name: Upload received on failure
         if: failure()

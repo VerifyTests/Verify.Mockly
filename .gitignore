@@ -9,3 +9,4 @@ obj/
 nugets/
 .agents/skills/mockly/SKILL.md
 *.lnk
+TestResults/

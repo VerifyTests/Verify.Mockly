@@ -61,7 +61,7 @@ public async Task VerifyGetRequest()
     await Verify(mock);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L4-L22' title='Snippet source file'>snippet source</a> | <a href='#snippet-VerifyGetRequest' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L3-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-VerifyGetRequest' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in:
@@ -110,7 +110,7 @@ public async Task VerifyPostRequest()
     await Verify(mock);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L24-L47' title='Snippet source file'>snippet source</a> | <a href='#snippet-VerifyPostRequest' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L23-L46' title='Snippet source file'>snippet source</a> | <a href='#snippet-VerifyPostRequest' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in:
@@ -158,7 +158,7 @@ public async Task VerifyRequestCollection()
     await Verify(requests);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L49-L70' title='Snippet source file'>snippet source</a> | <a href='#snippet-VerifyRequestCollection' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L48-L69' title='Snippet source file'>snippet source</a> | <a href='#snippet-VerifyRequestCollection' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in:
@@ -218,7 +218,7 @@ public async Task ScrubBody()
         .ScrubMember("Body");
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L72-L96' title='Snippet source file'>snippet source</a> | <a href='#snippet-ScrubBody' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L71-L95' title='Snippet source file'>snippet source</a> | <a href='#snippet-ScrubBody' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in:

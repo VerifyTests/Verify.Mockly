@@ -6,7 +6,7 @@
   <ItemGroup>
     <PackageVersion Include="MarkdownSnippets.MsBuild" Version="28.5.0" />
     <PackageVersion Include="Mockly" Version="1.13.0" />
-    <PackageVersion Include="Polyfill" Version="11.4.3" />
+    <PackageVersion Include="Polyfill" Version="11.4.5" />
     <PackageVersion Include="ProjectDefaults" Version="1.0.184" />
     <PackageVersion Include="Sbom" Version="0.3.1" />
     <PackageVersion Include="Verify" Version="33.3.3" />
@@ -15,6 +15,6 @@
     <PackageVersion Include="DiffEngine" Version="20.8.1" />
     <PackageVersion Include="EmptyFiles" Version="8.20.1" />
     <PackageVersion Include="SimpleInfoName" Version="3.2.1" />
-    <PackageVersion Include="TUnit" Version="1.73.19" />
+    <PackageVersion Include="TUnit" Version="1.75.0" />
   </ItemGroup>
 </Project>
